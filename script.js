@@ -39,9 +39,9 @@ function checkRemove(e) {
     textarea.value = todo.children[1].innerText;
     inputbox2.value = todo.children[0].innerText;
    
-    );
+   
   }
-}
+
 
 //add notes
 
