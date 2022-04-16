@@ -35,16 +35,10 @@ function checkRemove(e) {
     console.log(inso);
     const textin = (textarea.value = textareanote);
     console.log(textin);
-    removeLocalTodos(todo);
-
-    todo.remove();
+   
     textarea.value = todo.children[1].innerText;
     inputbox2.value = todo.children[0].innerText;
-    if (
-      btnaddnote.addEventListener("click", (e) => {
-        // removeLocalTodos(todo);
-      
-      })
+   
     );
   }
 }
@@ -55,7 +49,7 @@ btnaddnote.addEventListener("click", (e) => {
 
 
 
-    console.log("clicked outside");
+    console.log("clicked inside");
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("title");
 
