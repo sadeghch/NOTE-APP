@@ -20,8 +20,8 @@ function checkRemove(e) {
   if (classList[1] === "fa-trash-alt") {
     const todo = item.parentElement.parentElement;
 
-    removeLocalTodos(todo);
-    todo.remove();
+   
+    todo.remove(); removeLocalTodos(todo);
   } else if (classList[1] === "fa-pencil-square") {
     const todo = item.parentElement.parentElement;
     console.log(todo);
@@ -68,8 +68,8 @@ btnaddnote.addEventListener("click", (e) => {
     todoDiv.innerHTML = newnote;
     titlenote.appendChild(todoDiv);
     saveLocalTodos(newnote);
-    inputbox2.value = "";
-    textarea.value = "";
+    inputbox2.value = "add";
+    textarea.value = "add note";
   });
 
 
