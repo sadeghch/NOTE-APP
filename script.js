@@ -43,8 +43,7 @@ function checkRemove(e) {
     if (
       btnaddnote.addEventListener("click", (e) => {
         // removeLocalTodos(todo);
-        textarea.value = "";
-        inputbox2.value = "";
+      
       })
     );
   }
@@ -53,9 +52,9 @@ function checkRemove(e) {
 //add notes
 
 btnaddnote.addEventListener("click", (e) => {
-  box2.classList.remove("display");
 
-  if (inputbox2.value == "") {
+
+
     console.log("clicked outside");
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("title");
@@ -88,7 +87,7 @@ btnaddnote.addEventListener("click", (e) => {
     inputbox2.value = "";
     textarea.value = "";
   }
-});
+);
 
 //save note
 function saveLocalTodos(todo) {
