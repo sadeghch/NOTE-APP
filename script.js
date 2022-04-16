@@ -46,10 +46,7 @@ function checkRemove(e) {
 //add notes
 
 btnaddnote.addEventListener("click", (e) => {
-
-
-
-    console.log("clicked inside");
+   console.log("clicked inside");
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("title");
 
@@ -77,11 +74,10 @@ btnaddnote.addEventListener("click", (e) => {
     todoDiv.innerHTML = newnote;
     titlenote.appendChild(todoDiv);
     saveLocalTodos(newnote);
-
     inputbox2.value = "";
     textarea.value = "";
-  }
-);
+  })
+
 
 //save note
 function saveLocalTodos(todo) {
