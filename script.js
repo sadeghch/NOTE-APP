@@ -55,7 +55,7 @@ function checkRemove(e) {
 btnaddnote.addEventListener("click", (e) => {
   box2.classList.remove("display");
 
-  if (inputbox2.value != "") {
+  if (inputbox2.value == "") {
     console.log("clicked outside");
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("title");
