@@ -24,9 +24,7 @@ function checkRemove(e) {
     todo.remove();
   } else if (classList[1] === "fa-pencil-square") {
     const todo = item.parentElement.parentElement;
- 
     console.log(todo);
-
     const hedearnote = todo.children[0].innerText;
     console.log(hedearnote);
     const textareanote = todo.children[1].innerText;
@@ -35,12 +33,9 @@ function checkRemove(e) {
     console.log(inso);
     const textin = (textarea.value = textareanote);
     console.log(textin);
-   
     textarea.value = todo.children[1].innerText;
     inputbox2.value = todo.children[0].innerText;
-   
-   
-  }
+  }}
 
 
 //add notes
@@ -66,8 +61,7 @@ btnaddnote.addEventListener("click", (e) => {
     ":" +
     new Date().getMinutes()
   }</p><span><i class="far fa-trash-alt"></i></span>
-  <span><i  class="fas fa-pencil-square""></i></span>
- 
+  <span><i  class="fas fa-pencil-square""></i></span> 
 `;
     console.log(newnote);
     const titlenote = document.getElementById("titlenote");
@@ -76,7 +70,7 @@ btnaddnote.addEventListener("click", (e) => {
     saveLocalTodos(newnote);
     inputbox2.value = "";
     textarea.value = "";
-  })
+  });
 
 
 //save note
