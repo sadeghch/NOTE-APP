@@ -24,7 +24,7 @@ function checkRemove(e) {
     todo.remove();
   } else if (classList[1] === "fa-pencil-square") {
     const todo = item.parentElement.parentElement;
-    box2.classList.remove("display");
+ 
     console.log(todo);
 
     const hedearnote = todo.children[0].innerText;
